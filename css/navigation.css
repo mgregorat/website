@@ -1,0 +1,89 @@
+/* Navigation Menu - Completely Separated */
+.main-navigation {
+    background-color: white;
+    padding: 1.2rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.1);
+}
+
+.main-navigation nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.main-navigation nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #2c3e50;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.main-navigation nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2c3e50;
+    transition: width 0.3s ease;
+}
+
+.main-navigation nav ul li a:hover {
+    color: #34495e;
+}
+
+.main-navigation nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Active state for current section */
+.main-navigation nav ul li a.active {
+    color: #34495e;
+}
+
+.main-navigation nav ul li a.active::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-navigation nav ul {
+        gap: 2rem;
+    }
+
+    .main-navigation nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-navigation nav ul {
+        gap: 1rem;
+    }
+
+    .main-navigation nav ul li a {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+} 

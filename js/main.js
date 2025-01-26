@@ -1,7 +1,11 @@
 // Page transitions
 document.addEventListener('DOMContentLoaded', () => {
     const main = document.querySelector('main');
-    main.classList.add('fade-in');
+    // Remove this line since the class is already in HTML
+    // main.classList.add('fade-in');
+    
+    // Add a console.log to verify the script is loading
+    console.log('JavaScript is loaded!');
 });
 
 // Smooth scroll for navigation links
