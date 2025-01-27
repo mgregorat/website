@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,7 +30,7 @@
         <section id="about" class="section">
             <div class="profile-section">
                 <div class="profile-content">
-                    <p class="intro-text">Hello! I'm <span class="name-highlight">Matthew Gregorat</span>, a senior at Florida Polytechnic University, passionate about technology, fitness, and innovation.</p>
+                    <p class="intro-text">Hello! I'm <span class="name-highlight">Matthew Gregorat</span>, a Master's student at Florida Polytechnic University. I'm currently seeking opportunities in an AI-related field!</p>
                     <div class="profile-image">
                         <img src="images/profile.jpg" alt="Matthew Gregorat">
                     </div>
@@ -50,8 +52,34 @@
             </div>
         </section>
 
+        <!-- About Paragraph Section -->
+        <section id="para" class="section section--compact section--minimal-spacing">
+            <div class="paraMatthew">
+                <div class="paraMatthew__container">
+                    <h2 class="paraMatthew__title">About Me</h2>
+                    <div class="paraMatthew__content">
+                        <p class="paraMatthew__text">
+                            As a senior at Florida Polytechnic University pursuing a degree in Computer Science, 
+                            I've developed a strong foundation in software development and cybersecurity. My academic journey, 
+                            combined with multiple industry certifications including AWS Cloud Practitioner and CompTIA Security+, 
+                            has equipped me with both theoretical knowledge and practical skills.
+                        </p>
+                        <p class="paraMatthew__text">
+                            I'm passionate about creating efficient, secure solutions and have experience in full-stack development, 
+                            cloud computing, and network security. Outside of technology, I maintain a strong interest in fitness 
+                            and believe in the importance of a balanced, healthy lifestyle.
+                        </p>
+                        <p class="paraMatthew__text">
+                            Currently, I'm seeking opportunities where I can apply my technical skills and continue growing as a 
+                            professional in the field of technology and cybersecurity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Skills Section -->
-        <section id="skills" class="section">
+        <section id="skills" class="section section--compact section--minimal-spacing">
             <div class="skills-section">
                 <h2>Skills & Certifications</h2>
                 <div class="skills-container">
@@ -59,7 +87,6 @@
                         <h3>Programming</h3>
                         <ul>
                             <li>Python</li>
-                            <li>Java</li>
                             <li>C++</li>
                             <li>JavaScript</li>
                             <li>HTML/CSS</li>
@@ -75,7 +102,7 @@
                             <li>Data Structures & Algorithms</li>
                             <li>Database Management</li>
                             <li>Version Control</li>
-                            <li>RESTful APIs</li>
+                            <li>Machine Learning</li>
                         </ul>
                     </div>
                     
@@ -84,7 +111,6 @@
                         <ul>
                             <li>VS Code</li>
                             <li>GitHub</li>
-                            <li>Eclipse</li>
                             <li>MySQL</li>
                             <li>MongoDB</li>
                             <li>Node.js</li>
@@ -95,21 +121,86 @@
                         <h3>Certifications</h3>
                         <ul>
                             <li>AWS Cloud Practitioner</li>
-                            <li>CompTIA Security+</li>
-                            <li>CompTIA Network+</li>
-                            <li>CompTIA A+</li>
-                            <li>Google IT Support</li>
-                            <li>Microsoft Azure Fundamentals</li>
+                            <li>Loading..</li>
+                            <li>Loading..</li>
+                            <li>Loading..</li>
+                            <li>Loading..</li>
+                            <li>Loading..</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-<!-- Projects Section -->
-<section id="projects" class="section">
-    <?php include 'projects.html'; ?>
-</section>
+        <!-- Projects Section -->
+        <section id="projects" class="section section--compact section--minimal-spacing section--reduced-bottom">
+            <div class="projectsMatthew">
+                <h2 class="projectsMatthew__title">Projects</h2>
+                
+                <!-- Project 1 - Left Aligned -->
+                <div class="projectsMatthew__item projectsMatthew__item--left">
+                    <div class="projectsMatthew__image">
+                        <img src="images/portfolio.png" alt="Project 1">
+                    </div>
+                    <div class="projectsMatthew__info">
+                        <h3>Portfolio Website</h3>
+                        <div class="projectsMatthew__tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <p>This website! - A responsive personal portfolio website built from scratch. Features smooth animations, 
+                           clean UI/UX design, and modern web development practices.</p>
+                        <div class="projectsMatthew__links">
+                            <a href="#" class="projectsMatthew__button">Live Demo</a>
+                            <a href="#" class="projectsMatthew__button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Right Aligned -->
+                <div class="projectsMatthew__item projectsMatthew__item--right">
+                    <div class="projectsMatthew__info">
+                        <h3>Stock Price Predictor</h3>
+                        <div class="projectsMatthew__tags">
+                            <span>Python</span>
+                            <span>Apache Kafka</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <p>A real-time stock market prediction system using data streaming and machine learning. 
+                            Achieved 85% accuracy in trend prediction using neural networks and big data processing.</p>
+                        <div class="projectsMatthew__links">
+                            <a href="#" class="projectsMatthew__button">Live Demo</a>
+                            <a href="#" class="projectsMatthew__button">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projectsMatthew__image">
+                        <img src="images/project2.jpg" alt="Project 2">
+                    </div>
+                </div>
+
+                <!-- Project 3 - Left Aligned -->
+                <div class="projectsMatthew__item projectsMatthew__item--left">
+                    <div class="projectsMatthew__image">
+                        <img src="images/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="projectsMatthew__info">
+                        <h3>Weather Dashboard</h3>
+                        <div class="projectsMatthew__tags">
+                            <span>JavaScript</span>
+                            <span>API Integration</span>
+                            <span>CSS</span>
+                        </div>
+                        <p>A weather dashboard that provides real-time weather data and forecasts 
+                           using external API integration and dynamic updates.</p>
+                        <div class="projectsMatthew__links">
+                            <a href="#" class="projectsMatthew__button">Live Demo</a>
+                            <a href="#" class="projectsMatthew__button">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section">
