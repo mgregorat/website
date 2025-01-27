@@ -472,3 +472,28 @@ h3 {
 p {
     margin-bottom: 1rem;
 }
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 1.5rem 1rem;
+    }
+
+    .section--compact {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}

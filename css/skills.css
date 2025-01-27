@@ -164,16 +164,18 @@
     }
 }
 
-@media (max-width: 768px) {
-    .skills-container {
-        grid-template-columns: 1fr;
+/* Mobile adjustments for skills section */
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
-    
-    .skill-category {
-        padding: 2rem;
+
+    .skill-item {
+        padding: 0.8rem;
     }
-    
-    .skills-section h2 {
-        font-size: 2rem;
+
+    .skill-title {
+        font-size: 0.9rem;
     }
 } 

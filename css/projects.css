@@ -366,3 +366,50 @@
 .projectsMatthew__item.reveal {
     animation: fadeInUp 0.6s ease forwards;
 }
+
+/* Enhanced mobile responsiveness for projects */
+@media screen and (max-width: 768px) {
+    .projectsMatthew__item,
+    .projectsMatthew__item--right {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .projectsMatthew__image {
+        width: 100%;
+    }
+
+    .projectsMatthew__image img {
+        height: 180px;
+    }
+
+    .projectsMatthew__info {
+        padding: 1rem;
+    }
+
+    .projectsMatthew__info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .projectsMatthew__tags {
+        gap: 0.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .projectsMatthew__tags span {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .projectsMatthew__button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .projectsMatthew__title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}

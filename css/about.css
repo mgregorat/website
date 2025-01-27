@@ -80,3 +80,20 @@ margin-top: 0;
         line-height: 1.6;
     }
 }
+
+/* Mobile adjustments for about section */
+@media screen and (max-width: 768px) {
+    .paraMatthew {
+        padding: 10px;
+    }
+
+    .paraMatthew__container {
+        padding: 1.5rem;
+    }
+
+    .paraMatthew__text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+}

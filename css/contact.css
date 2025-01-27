@@ -171,4 +171,20 @@ footer p {
     .contact-item {
         padding: 1rem;
     }
+}
+
+/* Mobile adjustments for contact section */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .contact-item {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
 } 
