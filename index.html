@@ -3,227 +3,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Gregorat - Portfolio</title>
-    <link rel="stylesheet" href="css/navigation.css">
+    <title>Matthew Gregorat — Data & AI Engineer</title>
+    <meta name="description" content="Matthew Gregorat — Computer Science M.S. graduate building data-driven and AI products across full-stack web, machine learning, and cloud.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated background -->
+    <div class="aurora" aria-hidden="true">
+        <span class="aurora__blob aurora__blob--1"></span>
+        <span class="aurora__blob aurora__blob--2"></span>
+        <span class="aurora__blob aurora__blob--3"></span>
+        <div class="grid-overlay"></div>
+    </div>
+
     <!-- Navigation -->
-    <header class="main-navigation">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#top" class="nav__brand">MG<span class="dot">.</span></a>
+            <nav class="nav__links">
+                <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="./documents/MatthewGregorat-Resume.pdf" target="_blank" rel="noopener" class="nav__cta">Résumé</a>
+        </div>
     </header>
 
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="profile-section">
-                <div class="profile-content">
-                    <p class="intro-text">Hello! I'm <span class="name-highlight">Matthew Gregorat</span>, a Master's student at Florida Polytechnic University. I'm currently seeking opportunities in an AI-related field!</p>
-                    <div class="profile-image">
-                        <img src="images/profile.jpg" alt="Matthew Gregorat">
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero__inner">
+                <div class="hero__content reveal">
+                    <span class="badge"><span class="badge__dot"></span>Available for new roles</span>
+                    <p class="eyebrow">Matthew Gregorat</p>
+                    <h1 class="hero__title">Data &amp; AI<br><span class="hero__title-accent">engineer</span></h1>
+                    <p class="hero__lede">
+                        I build data-driven and AI products across full-stack web, machine learning,
+                        and cloud. Computer Science M.S. graduate focused on turning messy data and
+                        model behavior into reliable, shipped software.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#work" class="btn btn--primary">View work <span class="btn__arrow">→</span></a>
+                        <a href="#contact" class="btn btn--ghost">Contact</a>
+                    </div>
+                    <ul class="hero__highlights">
+                        <li>Python, SQL, and full-stack TypeScript/React</li>
+                        <li>Machine learning, deep learning, and LLM evaluation</li>
+                        <li>AWS, data pipelines, and cloud-native workflows</li>
+                        <li>Docker-based validation and CI-style automation</li>
+                    </ul>
+                </div>
+                <div class="hero__media reveal">
+                    <div class="hero__photo">
+                        <img src="images/profile.png" alt="Matthew Gregorat">
                     </div>
                 </div>
-                <div class="profile-buttons">
-                    <a href="./documents/NewResume.pdf" class="resume-button" target="_blank">Resume</a>
-                    <div class="social-buttons">
-                        <a href="https://github.com/mgregorat" target="_blank">
-                            <img src="./images/github.png" alt="GitHub" class="icon"> GitHub
-                        </a>
-                        <a href="mailto:mgregorat0995@floridapoly.edu">
-                            <img src="./images/email.png" alt="Email" class="icon"> Email
-                        </a>
-                        <a href="https://www.linkedin.com/in/matthew-gregorat" target="_blank">
-                            <img src="./images/linkedin.jpg" alt="LinkedIn" class="icon"> LinkedIn
-                        </a>
+            </div>
+
+            <div class="stats reveal">
+                <div class="stat">
+                    <span class="stat__num" data-count="2"></span>
+                    <span class="stat__label">CS degrees<br>B.S. + M.S.</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num" data-count="3.75" data-decimals="2"></span>
+                    <span class="stat__label">Graduate<br>GPA</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__num" data-count="2"></span>
+                    <span class="stat__label">AWS certs<br>Practitioner + Architect</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech marquee -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <span>Python</span><span>·</span><span>SQL</span><span>·</span><span>TypeScript</span><span>·</span><span>React</span><span>·</span><span>Node.js</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>Machine Learning</span><span>·</span><span>LLM Evaluation</span><span>·</span><span>PySpark</span><span>·</span><span>Kafka</span><span>·</span><span>PostgreSQL</span><span>·</span>
+                <span>Python</span><span>·</span><span>SQL</span><span>·</span><span>TypeScript</span><span>·</span><span>React</span><span>·</span><span>Node.js</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>Machine Learning</span><span>·</span><span>LLM Evaluation</span><span>·</span><span>PySpark</span><span>·</span><span>Kafka</span><span>·</span><span>PostgreSQL</span><span>·</span>
+            </div>
+        </div>
+
+        <!-- Work -->
+        <section id="work" class="section">
+            <div class="section__head reveal">
+                <span class="section__kicker">Selected work</span>
+                <h2 class="section__title">Things I've built</h2>
+                <p class="section__sub">A mix of shipped products and applied research — full-stack apps, AI pipelines, and model evaluation.</p>
+            </div>
+
+            <div class="work-group">
+                <h3 class="group__title reveal"><span class="group__name">AI / Machine Learning</span><span class="group__line"></span></h3>
+                <div class="cards">
+                <article class="card reveal">
+                    <span class="card__num">01</span>
+                    <div class="card__top">
+                        <span class="card__label">AI pipeline · Client work</span>
+                        <h3 class="card__title">AI-Driven PDF Data Extraction</h3>
+                    </div>
+                    <p class="card__desc">
+                        An AI-powered document pipeline for Everglades Financial that parses and extracts
+                        key financial fields from PDFs, deployed directly into the client website.
+                    </p>
+                    <ul class="card__points">
+                        <li>Built on Google Cloud Document AI for automated parsing and extraction.</li>
+                        <li>Trained and fine-tuned an auto-labeling model for key financial fields.</li>
+                        <li>Hardened extraction to handle varied PDF types, cutting manual input.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Google Document AI</span>
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Automation</span>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <span class="card__num">02</span>
+                    <div class="card__top">
+                        <span class="card__label">Research · Submitted for publication</span>
+                        <h3 class="card__title">LLMs for Design Pattern Recommendation</h3>
+                    </div>
+                    <p class="card__desc">
+                        A benchmarking study evaluating how well large language models recommend software
+                        design patterns directly from written software requirements.
+                    </p>
+                    <ul class="card__points">
+                        <li>Benchmarked LLMs across 217 requirement–pattern pairs.</li>
+                        <li>Compared exact match, top-k accuracy, partial match, recall, and calibration.</li>
+                        <li>Analyzed over-prediction, source sensitivity, and strict-vs-partial gaps.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>LLM Evaluation</span>
+                        <span>Python</span>
+                        <span>Benchmarking</span>
+                        <span>Research</span>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <span class="card__num">03</span>
+                    <div class="card__top">
+                        <span class="card__label">Data · Machine learning</span>
+                        <h3 class="card__title">Real-Time Stock Predictor</h3>
+                    </div>
+                    <p class="card__desc">
+                        A streaming data pipeline and deep-learning model that predicts stock
+                        trends from live market data.
+                    </p>
+                    <ul class="card__points">
+                        <li>Apache Kafka streaming into a Hadoop Distributed File System.</li>
+                        <li>PySpark trend indicators feeding an LSTM neural network.</li>
+                        <li>Generated trend signals to support trading decisions.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Apache Kafka</span>
+                        <span>PySpark</span>
+                        <span>LSTM</span>
+                        <span>Big Data</span>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <span class="card__num">04</span>
+                    <div class="card__top">
+                        <span class="card__label">NLP · Classification</span>
+                        <h3 class="card__title">Fake News Detector</h3>
+                    </div>
+                    <p class="card__desc">
+                        A text-classification project that flags misleading news articles, comparing
+                        classic baselines against deep-learning models.
+                    </p>
+                    <ul class="card__points">
+                        <li>Built baseline classifiers (TF-IDF features with traditional ML models).</li>
+                        <li>Trained deep-learning models to capture richer language patterns.</li>
+                        <li>Benchmarked accuracy and trade-offs between the two approaches.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Deep Learning</span>
+                        <span>scikit-learn</span>
+                    </div>
+                </article>
+                </div>
+            </div>
+
+            <div class="work-group">
+                <h3 class="group__title reveal"><span class="group__name">Software Development</span><span class="group__line"></span></h3>
+                <div class="cards">
+                <article class="card reveal">
+                    <span class="card__num">05</span>
+                    <div class="card__top">
+                        <span class="card__label">Full-stack · In development</span>
+                        <h3 class="card__title">Solana Trading Journal</h3>
+                    </div>
+                    <p class="card__desc">
+                        A full-stack web app that tracks daily profit/loss, portfolio value, and transaction
+                        history across multiple Solana wallets, being prepared for public release.
+                    </p>
+                    <ul class="card__points">
+                        <li>REST API routes in Node.js / TypeScript wired to a React frontend.</li>
+                        <li>Live price and market data mined from public dashboards and APIs.</li>
+                        <li>Backend logic for real-time transactions and cross-session data consistency.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>TypeScript</span>
+                        <span>REST API</span>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <span class="card__num">06</span>
+                    <div class="card__top">
+                        <span class="card__label">Full-stack · In progress</span>
+                        <h3 class="card__title">AI Job-Match Platform</h3>
+                    </div>
+                    <p class="card__desc">
+                        A full-stack platform that ranks job postings against a user's resume using
+                        semantic embeddings and surfaces tailored, explainable match insights.
+                    </p>
+                    <ul class="card__points">
+                        <li>React + Node.js / TypeScript frontend and API over a PostgreSQL store.</li>
+                        <li>Semantic matching with LLM embeddings and vector similarity search.</li>
+                        <li>Auth, saved searches, and an analytics dashboard deployed on AWS.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>LLM Embeddings</span>
+                        <span>AWS</span>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <span class="card__num">07</span>
+                    <div class="card__top">
+                        <span class="card__label">Full-stack · Planned</span>
+                        <h3 class="card__title">Realtime Collaborative Board</h3>
+                    </div>
+                    <p class="card__desc">
+                        A multi-user project board with live updates, drag-and-drop, and presence —
+                        built to sharpen real-time systems and clean API design.
+                    </p>
+                    <ul class="card__points">
+                        <li>WebSocket-driven live sync and presence across connected clients.</li>
+                        <li>React frontend with optimistic UI and drag-and-drop columns.</li>
+                        <li>Node.js / TypeScript API with PostgreSQL persistence, shipped via Docker.</li>
+                    </ul>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>WebSockets</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                    </div>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="section__head reveal">
+                <span class="section__kicker">Experience</span>
+                <h2 class="section__title">Where I've worked</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="exp reveal">
+                    <div class="exp__meta">
+                        <span class="exp__when">Current</span>
+                    </div>
+                    <div class="exp__body">
+                        <h3>AI Model Evaluation Engineer</h3>
+                        <p class="exp__org">Handshake AI · Remote</p>
+                        <ul class="exp__points">
+                            <li>Built Docker-based validation pipelines to test code against repository-specific test suites.</li>
+                            <li>Implemented and validated solutions for open-source GitHub repositories.</li>
+                            <li>Debugged failing test cases and analyzed logs to pinpoint issues in model-generated code.</li>
+                            <li>Used Git, GitHub, and command-line workflows for branching, commits, and collaboration.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="exp reveal">
+                    <div class="exp__meta">
+                        <span class="exp__when">Internship</span>
+                    </div>
+                    <div class="exp__body">
+                        <h3>Data Analyst Intern</h3>
+                        <p class="exp__org">New York Life Insurance Co. · Tampa, FL</p>
+                        <ul class="exp__points">
+                            <li>Developed SQL-based underwriting models that cut application processing time by 20%.</li>
+                            <li>Built interactive Tableau dashboards visualizing exposure trends for executives.</li>
+                            <li>Built and evaluated Python ML models to assess applicant risk and improve performance.</li>
+                            <li>Delivered technical findings as clear, business-focused narratives to senior underwriters.</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="section__head section__head--sub reveal">
+                <span class="section__kicker">Education</span>
+                <h2 class="section__title">Where I studied</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="exp reveal">
+                    <div class="exp__meta">
+                        <span class="exp__when">2021 – 2026</span>
+                    </div>
+                    <div class="exp__body">
+                        <h3>M.S. &amp; B.S. in Computer Science</h3>
+                        <p class="exp__org">Florida Polytechnic University · Lakeland, FL</p>
+                        <ul class="exp__points">
+                            <li>Master of Science in Computer Science — GPA 3.75 (Aug 2025 – May 2026).</li>
+                            <li>Bachelor of Science in Computer Science — GPA 3.43 (Aug 2021 – May 2025).</li>
+                            <li>Focus on data analytics, big data, algorithms, and database design.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="section__head reveal">
+                <span class="section__kicker">Toolkit</span>
+                <h2 class="section__title">Skills &amp; tools</h2>
+            </div>
+
+            <div class="skills">
+                <div class="skill reveal">
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Java</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skill reveal">
+                    <h3>AI / ML &amp; Data</h3>
+                    <div class="tags">
+                        <span>Machine Learning</span>
+                        <span>Deep Learning</span>
+                        <span>LLM Evaluation</span>
+                        <span>Feature Engineering</span>
+                        <span>Data Preprocessing</span>
+                    </div>
+                </div>
+                <div class="skill reveal">
+                    <h3>Cloud &amp; Data Tools</h3>
+                    <div class="tags">
+                        <span>AWS S3</span>
+                        <span>AWS Lambda</span>
+                        <span>Redshift</span>
+                        <span>Amazon EMR</span>
+                        <span>Tableau</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+                <div class="skill reveal">
+                    <h3>Databases</h3>
+                    <div class="tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill reveal">
+                    <h3>Engineering &amp; Workflow</h3>
+                    <div class="tags">
+                        <span>Git &amp; GitHub</span>
+                        <span>Docker</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill reveal">
+                    <h3>Process &amp; Certs</h3>
+                    <div class="tags">
+                        <span>AWS Cloud Practitioner</span>
+                        <span>AWS Solutions Architect</span>
+                        <span>Agile / Scrum</span>
+                        <span>Jira</span>
+                        <span>Research Analysis</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Paragraph Section -->
-        <section id="para" class="section section--compact section--minimal-spacing">
-            <div class="paraMatthew">
-                <div class="paraMatthew__container">
-                    <h2 class="paraMatthew__title">About Me</h2>
-                    <div class="paraMatthew__content">
-                        <p class="paraMatthew__text">
-                            As a master’s student at Florida Polytechnic University pursuing a degree in Computer Science, I am deeply passionate about artificial intelligence and data science. Throughout my academic journey, I have built a strong foundation in software development and honed my technical expertise, particularly in data analysis, project management, and database design. I hold an AWS Cloud Practitioner certification and am currently working toward another, demonstrating my commitment to continuous learning and growth in the field.
-                        </p>
-                        <p class="paraMatthew__text">
-                            I'm passionate about creating efficient, secure solutions and have experience in full-stack development, 
-                            cloud computing, and network security. Outside of technology, I maintain a strong interest in fitness 
-                            and believe in the importance of a balanced, healthy lifestyle.
-                        </p>
-                        <p class="paraMatthew__text">
-                            I am actively seeking an internship in AI or data science, where I can leverage my skills to contribute to impactful projects while further developing my knowledge. I thrive in collaborative team environments and enjoy tackling complex, data-driven challenges. I believe in the power of teamwork and am excited about opportunities that allow me to both contribute to and learn from the collective expertise of others. With a strong technical background and a passion for innovation, I am eager to make a meaningful contribution in a dynamic, real-world setting.
-                        </p>
-                    </div>
+        <!-- Contact -->
+        <section id="contact" class="section section--contact">
+            <div class="contact reveal">
+                <span class="section__kicker">Get in touch</span>
+                <h2 class="contact__title">Let's build something.</h2>
+                <p class="contact__sub">
+                    I'm open to roles and collaborations in data, AI/ML, and full-stack engineering.
+                    The fastest way to reach me is email.
+                </p>
+                <div class="contact__actions">
+                    <a href="mailto:mgregorat0995@floridapoly.edu" class="btn btn--primary">Email me</a>
+                    <a href="./documents/MatthewGregorat-Resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Download résumé</a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section section--compact section--minimal-spacing">
-            <div class="skills-section">
-                <h2>Skills & Certifications</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Programming</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Development</h3>
-                        <ul>
-                            <li>Full Stack Development</li>
-                            <li>Object-Oriented Programming</li>
-                            <li>Data Structures & Algorithms</li>
-                            <li>Database Management</li>
-                            <li>Version Control</li>
-                            <li>Machine Learning</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Tools</h3>
-                        <ul>
-                            <li>VS Code</li>
-                            <li>GitHub</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>Node.js</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Certifications</h3>
-                        <ul>
-                            <li>AWS Cloud Practitioner</li>
-                            <li>Loading..</li>
-                            <li>Loading..</li>
-                            <li>Loading..</li>
-                            <li>Loading..</li>
-                            <li>Loading..</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section section--compact section--minimal-spacing section--reduced-bottom">
-            <div class="projectsMatthew">
-                <h2 class="projectsMatthew__title">Projects</h2>
-                
-             
-
-                <!-- Project 2 - Right Aligned -->
-                <div class="projectsMatthew__item projectsMatthew__item--right">
-                    <div class="projectsMatthew__info">
-                        <h3>Stock Price Predictor</h3>
-                        <div class="projectsMatthew__tags">
-                            <span>Python</span>
-                            <span>Apache Kafka</span>
-                            <span>Machine Learning</span>
-                        </div>
-                        <p>A real-time stock market prediction system using data streaming and machine learning. 
-                            Achieved 85% accuracy in trend prediction using neural networks and big data processing.</p>
-                        <div class="projectsMatthew__links">
-                        </div>
-                    </div>
-                    <div class="projectsMatthew__image">
-                        <img src="images/stock.png" alt="Project 2">
-                    </div>
-                </div>
-
-                   <!-- Project 1 - Left Aligned -->
-                   <div class="projectsMatthew__item projectsMatthew__item--left">
-                    <div class="projectsMatthew__image">
-                        <img src="images/portfolio.png" alt="Project 1">
-                    </div>
-                    <div class="projectsMatthew__info">
-                        <h3>Portfolio Website</h3>
-                        <div class="projectsMatthew__tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <p>This website! - A responsive personal portfolio website built from scratch. Features smooth animations, 
-                           clean UI/UX design, and modern web development practices.</p>
-                        <div class="projectsMatthew__links">
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 - Left Aligned -->
-                <div class="projectsMatthew__item projectsMatthew__item--right">
-                    <div class="projectsMatthew__image">
-                        <img src="images/weather.png" alt="Project 3">
-                    </div>
-                    <div class="projectsMatthew__info">
-                        <h3>Weather Dashboard</h3>
-                        <div class="projectsMatthew__tags">
-                            <span>JavaScript (React)</span>
-                            <span>API Integration</span>
-                            <span>CSS</span>
-                        </div>
-                        <p>A weather dashboard that provides real-time weather data and forecasts 
-                           using external API integration and dynamic updates.</p>
-                        <div class="projectsMatthew__links">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="contact-section">
-                <h2>Contact</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3>Let's Connect!</h3>
-                        <p>Feel free to reach out for opportunities, collaborations, or just to say hello.</p>
-                        <div class="contact-methods">
-                            <a href="mailto:mgregorat0995@floridapoly.edu" class="contact-item">
-                                <img src="./images/email.png" alt="Email" class="contact-icon">
-                                <span>mgregorat0995@floridapoly.edu</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/matthew-gregorat" target="_blank" class="contact-item">
-                                <img src="./images/linkedin.jpg" alt="LinkedIn" class="contact-icon">
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="https://github.com/mgregorat" target="_blank" class="contact-item">
-                                <img src="./images/github.png" alt="GitHub" class="contact-icon">
-                                <span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="contact__links">
+                    <a href="https://www.linkedin.com/in/matthew-gregorat" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/mgregorat" target="_blank" rel="noopener">GitHub</a>
+                    <a href="mailto:mgregorat0995@floridapoly.edu">mgregorat0995@floridapoly.edu</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Matthew Gregorat.</p>
+    <footer class="footer">
+        <p>&copy; <span id="year">2026</span> Matthew Gregorat — Lakeland, FL</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
